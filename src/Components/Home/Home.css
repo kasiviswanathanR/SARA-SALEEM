@@ -1,16 +1,18 @@
+
 .home-container {
   display: flex;
   height: 100vh;
   background-color: #4B5563; /* gray-600 background */
   background-image: url('/public/bg1.png');
   background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: contain;
+  background-position: center top; /* move it to the top */
+  background-size: 41%; /* stretch horizontally, but only half height */
   color: white;
   font-family: 'Segoe UI', sans-serif;
   overflow: hidden;
-  padding: 0px 60px 0 60px; /* Top padding for 50px space */
+  padding: 0px 60px 0 60px; /* 50px top padding for content */
 }
+
 
 
 .left-section {
@@ -80,7 +82,7 @@
   max-width: 400px;  height: auto;
   /* ← ADD: turn black into white */
   filter: brightness(0) invert(1);
-  margin-bottom: 135px;
+  margin-bottom: 300px;
 }
 
 
