@@ -1,0 +1,103 @@
+.home-container {
+  display: flex;
+  height: 100vh;
+  background-color: #4B5563; /* gray-600 background */
+  background-image: url('/public/bg1.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+  padding: 0px 60px 0 60px; /* Top padding for 50px space */
+}
+
+
+.left-section {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 500px;
+}
+
+.logo-text {
+  font-size: 54px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.social-icons {
+  display: flex;
+  gap: 25px;
+  font-size: 20px;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.right-section {
+  /* keep your existing container rules… */
+  flex: 1;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 20px;
+  padding-bottom: 60px;
+}
+
+.right-section a {
+  display: block;                /* full‑width link */
+  width: 100%;
+  text-align: right;             /* text flush right */
+  color: rgba(255, 255, 255, 0.685);
+  font-size: 18px;
+  text-decoration: none;
+    
+  padding: 8px 0;                /* vertical spacing */
+  border-bottom: 1px solid white;/* the underline */
+  transition: border-color 0.3s;  /* for hover fade if you like */
+}
+
+
+.right-section a:hover {
+  border-color: rgb(255, 255, 255);
+  color: #ffffff; /* fade the line on hover */
+}
+
+.logo-image {
+  width: 100%;
+  max-width: 400px;  height: auto;
+  /* ← ADD: turn black into white */
+  filter: brightness(0) invert(1);
+  margin-bottom: 135px;
+}
+
+
+
+/* Optional: Responsive tweak */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .left-section, .right-section {
+    align-items: flex-start;
+  }
+
+  .right-section {
+    align-items: flex-start;
+    margin-top: 40px;
+  }
+}
