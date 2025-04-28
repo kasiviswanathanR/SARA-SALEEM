@@ -2,7 +2,7 @@
 .home-container {
   display: flex;
   height: 100vh;
-  background-color: #4B5563; /* gray-600 background */
+  background-color: #434343; /* gray-600 background */
   background-image: url('/public/bg1.png');
   background-repeat: no-repeat;
   background-position: center top; /* move it to the top */
